@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "294306680860",
+    "firebase_url": "https://anti-rat.firebaseio.com",
+    "project_id": "anti-rat",
+    "storage_bucket": "anti-rat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294306680860:android:1e7aafb7f4531c22",
+        "android_client_info": {
+          "package_name": "vn.bongtran.antirat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294306680860-iu5g2935pohmlbpfpar65kpc2vfmana0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMHP_Iiq_WhxmUsv0m_85OJF4sDGyPgww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
