@@ -7,8 +7,8 @@ android {
         applicationId "vn.bongtran.antirat"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 110
-        versionName "1.1"
+        versionCode 112
+        versionName "1.1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -25,6 +25,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.google.android.gms:play-services-ads:11.0.1'
+//    compile 'com.google.android.gms:play-services-ads:11.0.1'
+    compile 'com.google.firebase:firebase-crash:11.0.1'
+    compile 'com.google.firebase:firebase-ads:11.0.1'
     testCompile 'junit:junit:4.12'
 }

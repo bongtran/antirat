@@ -18,6 +18,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.Random;
 
@@ -43,7 +44,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        MobileAds.initialize(this, "ca-app-pub-6776760454122339~8987004407");
         // Create the next level button, which tries to show an interstitial when clicked.
         btControl = ((Button) findViewById(R.id.next_level_button));
 //        btControl.setEnabled(false);
