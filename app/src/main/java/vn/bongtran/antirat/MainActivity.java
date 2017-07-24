@@ -8,11 +8,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -40,6 +42,7 @@ public class MainActivity extends Activity {
 //    private RotateAnimation rotateAnimation;
     private NotificationManager notifier;
     Notification notification;
+    private boolean isExit = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -259,5 +262,24 @@ public class MainActivity extends Activity {
 
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (isExit) {
+            super.onBackPressed();
+        } else {
+            Toast.makeText(this, R.string.txt_exit_app,
+                    Toast.LENGTH_SHORT).show();
+            isExit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    isExit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
     }
 }

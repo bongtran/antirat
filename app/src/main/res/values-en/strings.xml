@@ -13,4 +13,5 @@
     <string name="interstitial_ad_unit_id">ca-app-pub-6776760454122339/2940470801</string>
     <string name="notification_text">Repelling Rat</string>
     <string name="anti_rat_by_cat_sounds">Anti Rat Using Miaou</string>
+    <string name="txt_exit_app">Press Back again to Exit.</string>
 </resources>

@@ -13,4 +13,5 @@
     <string name="interstitial_ad_unit_id">ca-app-pub-6776760454122339/2940470801</string>
     <string name="notification_text">Đang đuổi chuột</string>
     <string name="anti_rat_by_cat_sounds">Đuổi Chuột</string>
+    <string name="txt_exit_app">Ấn một lần nữa để thoát</string>
 </resources>
